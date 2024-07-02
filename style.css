@@ -1,0 +1,1410 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+#navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(249, 246, 246);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    height: 100px;
+}
+
+
+.logo
+{
+    height: 70px;
+    width: 80px;
+    margin-left: 30px;
+}
+
+
+
+#navbar div ul
+{
+    display: flex;
+    gap: 50px;
+    margin-right: 20px;
+}
+
+
+#navbar div ul li
+{
+    list-style: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+#navbar div ul  :last-child
+{
+    color: black;
+}
+
+#navbar div ul li a 
+{
+    text-decoration: none;
+    transition: 0.3s;
+    position: relative;
+}
+
+
+#navbar div ul li a::after
+{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 3px;
+    left: 0px;
+    bottom: -4px;
+    background-color: rgb(74, 199, 221);
+    transition: 0.3s;
+
+}
+
+
+
+#navbar div ul li a:hover
+{
+    color: rgb(74, 199, 221);
+
+}
+
+#navbar div ul li a:hover::after
+
+{
+    width: 100%;
+}
+
+
+#page1maintext h4
+{
+    font-size: 20px;
+    color: black;
+    line-height: 40px;
+
+
+}
+
+
+#page1maintext h1
+{
+    font-size: 40px;
+    line-height: 30px;
+    color: rgb(0, 132, 155);    
+}
+
+
+#page1maintext h2
+{
+    font-size: 40px;
+    line-height: 50px;
+    color: black;
+}
+
+#page1maintext p
+{
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+
+#page1maintext button
+{
+    font-size: 30px;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    color: rgb(0, 132, 155);    
+    cursor: pointer;
+}
+
+
+#page1maintext 
+{
+    background-image: url("images/page1model.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+#oursupport
+{
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+#oursupport .free
+{
+    border: 1px solid grey;
+    width: 230px;
+    padding: 20px 15px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+}
+
+
+#oursupport .free:hover
+{
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+}
+
+
+#oursupport .free img
+{
+    width: 200px;
+    height: 200px;
+}
+
+
+#oursupport .free h6
+{
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: rgb(246, 205, 212);
+}
+
+
+#oursupport
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+#oursupport .free:nth-child(2) h6
+{
+    background-color: rgb(246, 167, 19);
+}
+
+
+#oursupport .free:nth-child(3) h6
+{
+    background-color: rgb(68, 111, 228);
+}
+
+
+#oursupport .free:nth-child(4) h6
+{
+    background-color: rgb(14, 180, 42);
+}
+
+
+
+#oursupport .free:nth-child(5) h6
+{
+    background-color: rgb(22, 128, 203);
+}
+
+
+
+#ourproducts
+{
+    padding: 40px 60px;
+    text-align: center;
+}
+
+#ourproducts h2
+{
+    font-size: 60px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: black;
+}
+
+
+#ourproducts p
+{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: grey;
+}
+
+
+#ourproducts .product
+{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid rgb(222, 219, 219);
+    cursor: pointer;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.09);
+    margin: 10px 0px;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+#ourproducts .product:hover
+{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+#ourproducts .product img
+{
+    width: 100%;
+    border-radius: 20%;
+}
+
+
+#ourproducts .product .productinfo
+{
+    text-align: start;
+    padding: 10px 0px;
+}
+
+
+#ourproducts .product .productinfo span
+{
+    color: grey;
+    font-size: 20px;
+}
+
+
+#ourproducts .product .productinfo h5
+{
+    padding-top: 3px;
+    color: black;
+    font-size: 25px;   
+    text-transform: capitalize;
+}
+
+
+
+#ourproducts .product .productinfo i
+{
+    font-size: 10px;
+    color: rgb(255, 223, 39);
+}
+
+
+#ourproducts .product .productinfo h4
+{
+    font-size: 20px;
+    color: rgb(0, 132, 155);    
+
+}
+
+
+#ourproducts .product  .cart
+{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(0, 132, 155);    
+    color: rgb(255, 255, 255);
+    line-height: 30px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+
+}
+
+
+#ourproducts .productscontainer
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    flex-wrap: wrap;
+}
+
+
+#advertisement
+{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/advertisement.webp");
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    color: #f309e7;
+
+}
+
+
+#advertisement h4
+{
+    font-size: 35px;
+    margin-bottom: 5px;
+    background-color: #fff;
+}
+
+
+#advertisement h2
+{
+    font-size: 30px;
+    margin-bottom: 5px;
+    background-color: #fff;
+}
+
+#advertisement button
+{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 15px;
+    color: #f309e7;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+#advertisement button:hover
+{
+    /* background-color: aqua; */
+    color: black;
+}
+
+
+#twoimages
+{
+    padding: 20px 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#twoimages h1
+{
+    font-size: 50px;
+    font-weight: 900;
+    color: #ff2f00;
+}
+
+#twoimages h2
+{
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+
+#twoimages span
+{
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 10px;
+    
+}
+
+
+button.white
+{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 15px;
+    color: #ffffff;
+    background-color: transparent;
+    outline: none;
+    border-radius: 5px;
+    border-color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+button.white:hover
+{
+    background-color: rgb(204, 71, 0);
+}
+
+
+
+#twoimages .firstimage
+{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-image: url("images/image1.webp");
+        min-width: 580px;
+        height: 50vh;
+        background-size: cover;
+        background-repeat: none;
+        background-position: center;
+        /* border: 1px solid grey; */
+        padding-left: 20px;
+}
+
+
+#twoimages .secondimage
+{
+    background-image: url("images/image2.avif");
+}
+
+
+#threeimages
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
+
+#threeimages .firstimage
+{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("images/img1.webp");
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+#threeimages h2
+{
+    font-size: 25px;
+    color: #fff;
+
+}
+
+
+#threeimages h3
+{
+    font-size: 50px;
+    color: #ec544e;
+}
+
+
+#threeimages .img2
+{
+    background-image: url("images/img2.webp");
+}
+
+
+
+
+#threeimages .img3
+{
+    background-image: url("images/img3.jpg");
+}
+
+
+
+#newsletter
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #041e42;
+    padding: 60px 40px;
+}
+
+
+#newsletter h4
+{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 10px;
+
+}
+
+
+#newsletter p
+{
+    color: #cbcbcb;
+    font-size: 14px;
+
+}
+
+
+#newsletter span
+{
+    color: yellow;
+}
+
+
+
+#newsletter input
+{
+    height: 30px;
+    width: 300px;
+    padding: 5px 10px;
+    font-size: 15px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+
+#newsletter button
+{
+    height: 30px;
+    width: 90px;
+    background-color: #018b80;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+#newsletter .form 
+{
+    display: flex;
+    width: 30%;
+}
+
+
+
+footer
+{
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+footer h4
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+
+footer p
+{
+    color: rgb(56, 56, 56);
+    margin-bottom: 5px;
+}
+
+
+footer icons
+{
+    padding-left: px;
+}
+
+.row img
+{
+    height: 100px;
+    width: 200px;
+    margin-bottom: 20px;
+
+}
+
+
+
+footer img
+{
+    height: 100px;
+    width: 400px;
+}
+
+
+footer .column
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+
+footer a
+{
+    text-decoration: none;
+    color: grey;
+}
+
+
+footer a:hover
+{
+    color: black;
+}
+
+
+.install p
+
+{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+
+
+/* ......................................................shop page..................................................................*/
+
+
+
+#shoppageheading
+{
+    background-color: #041e42;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+}
+
+
+
+
+#shoppageheading h2
+{
+    font-size: 50px;
+    color: #fff;
+}
+
+
+#shoppageheading p
+{
+    color: #fff;
+    font-size: 15px;
+}
+
+
+
+#pagination
+{
+    text-align: center;
+}
+
+
+#pagination a
+{
+    text-decoration: none;
+    background-color: #018b80;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-family: 400;
+}
+
+
+
+
+/* ***********************************************single product************************************************************************* */
+
+
+#productdetail
+{
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    margin-top: 20px;
+}
+
+
+
+
+
+#productdetail .singleproimage
+{
+width: 30%;
+margin-right: 50px;
+border: 2px solid grey;
+}
+
+
+
+.bigimage
+{
+    height: 400px;
+    width: 350px;
+    margin-top: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+
+    padding: 10px;
+}
+
+
+
+
+.small-img-grp
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px;
+
+}
+
+
+.small-img-col img
+{
+    width: 90px;
+    height: 140px;
+    border: 1px solid grey;
+    cursor: pointer;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+
+
+#productdetail .single-pro-detail
+{
+    width: 50%;
+    padding: 30px;
+}
+
+
+
+#productdetail .single-pro-detail h6
+{
+    font-size: 20px;
+    padding: 40px 0  20px 0;
+
+}
+
+
+#productdetail .single-pro-detail h4
+{
+    font-size: 25px;
+}
+
+
+
+#productdetail .single-pro-detail select
+{
+    display: block;
+    padding: 10px 10px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+
+#productdetail .single-pro-detail input
+{
+    height: 30px;
+    width: 50px;
+    padding: 5px;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+
+#productdetail .single-pro-detail button
+{
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: rgb(74, 199, 221);
+    color: #fff;
+
+}
+
+
+
+#productdetail .single-pro-detail h4
+{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+#productdetail .single-pro-detail span
+{
+    line-height: 20px;
+    color: rgb(53, 53, 53);
+}
+
+
+
+
+
+#productdetail .single-pro-detail h2
+{
+    padding: 30px 0  20px 0;
+    font-size: 30px;
+
+}
+
+
+
+
+
+/* .....................................................blog page............................................................. */
+
+
+
+.blogheading
+{
+    background-image: url("images/blogheader.avif");
+    width: 100%;    
+
+}
+
+
+
+#blogs
+{
+    padding: 100px;
+}
+
+
+.blogbox
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 150px;
+}
+
+
+.blogimg
+{
+    width: 60%;
+    margin-right: 40px;
+
+}
+
+.blogimg img
+{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+
+
+.blogdetail h4
+{
+    font-size: 30px;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.blogdetail p
+{
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: grey;
+}
+
+.blogdetail a
+{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+
+
+.blogdetail a:hover
+{
+    color: #018b80;
+}
+
+
+/* .........................................................about.............................................................. */
+
+
+
+
+.aboutheading
+{
+    background-image: url("images/aboutusheaderbackground.jpg");
+}
+
+
+#whoarewe
+{
+    padding: 40px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+#whoarewe img
+{
+    width: 50%;
+    height: auto;
+}
+
+
+#whoarewe .whoarewedetail
+{
+padding-left: 50px;
+}
+
+#whoarewe h2
+{
+    font-size: 30px;
+    padding: 30px;
+}
+
+
+
+#whoarewe p
+{
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0 20px 20px 20px;
+}
+
+
+#whoarewe abbr
+{
+    font-size: 20px;
+}
+
+
+#whoarewe marquee   
+{
+    font-size: 20px;
+}
+
+
+
+
+#about-app
+{
+    text-align: center;
+    align-items: center;
+}
+
+
+#about-app h1
+{
+    font-size: 40px;
+}
+
+
+
+#about-app img
+{
+    height: 600px;
+    width: 700px;
+}
+
+
+
+
+/* ..........................................................contant................................................................... */
+
+.contantheading
+{
+    background-image: url("images/contantheading.jpeg");
+}
+
+
+
+#contants
+{
+    padding: 50px;
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#contants span
+{
+    font-size: 20px;
+}
+
+#contants h2
+{
+    font-size: 25px;
+    line-height: 35px;
+    padding: 20px 0px;
+
+}
+
+
+#contants h3
+{
+    font-size: 15px;
+    padding-bottom: 15px;
+    
+}
+
+
+
+
+
+#contants li
+{
+    list-style: none;
+    display: flex;  
+    padding: 10px;
+    font-size: 20px;
+}
+
+#contants li i
+{
+    font-size: 20px;
+    padding: 5px;
+}
+
+
+
+#contant .maps
+{
+    width: 55%;
+    height: 400px;
+}
+
+
+
+
+#formdetails form
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+
+
+#formdetails form span
+{
+    font-size: 20px;
+    padding-bottom: 20px;
+
+}
+
+
+#formdetails form h2
+{
+    font-size: 25px;
+    padding-bottom: 20px;
+
+}
+
+
+
+#formdetails form input
+{
+    width: 500px;
+    height: 30px;
+    margin: 10px;
+}
+
+
+#formdetails form textarea
+{
+    height: 100px;
+    width: 500px;
+    margin: 10px;
+}
+
+
+
+#formdetails form button
+{
+    font-size: 15px;
+    padding: 15px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 100px;
+    cursor: pointer;
+    background-color: #018b80;
+    color: #fff;
+}
+
+
+#formdetails form button:hover
+{
+    color:black;
+}
+
+
+.peoples img
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+
+.peoples div
+{
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.peoples p
+{
+    color: grey;
+    text-transform: capitalize;
+    display: block;
+    padding: 20px;
+}
+
+.peoples p span
+{
+    font-weight: bold;
+    color: black;
+}
+
+#formdetails
+{
+    display: flex;
+}
+
+
+/* ...................................................cart.................................................................. */
+
+
+
+#cart table
+{
+    width: 100%;
+    table-layout: fixed;
+    white-space: nowrap;
+    padding: 20px;
+
+}
+
+
+#cart table img
+{
+    width: 70px;
+}
+
+
+#cart table td:nth-child(1)
+{
+    width: 100px;
+    text-align: center;
+}
+
+
+
+#cart table td:nth-child(2)
+{
+    width: 100px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
+#cart table td:nth-child(3)
+{
+    width: 100px;
+    text-align: center;
+}
+
+
+
+#cart table td:nth-child(4)
+{
+    width: 100px;
+    text-align: center;
+}
+
+
+
+#cart table td:nth-child(5)
+{
+    width: 100px;
+    text-align: center;
+
+}
+  
+
+#cart table td:nth-child(5) input
+{
+    width: 30px;
+}
+
+
+#cart table td:nth-child(6)
+{
+    width: 100px;
+    text-align: center;
+}
+
+
+
+#cart table thead
+{
+    border: 1px solid #31aa21;
+    border-left: none;
+    border-right: none;
+}
+
+
+#cart table thead td
+{
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 15px 0px;
+}
+
+
+#addcart
+
+{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+#addcart .applycoupon
+{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+
+
+#addcart .applycoupon h3
+
+{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+#addcart .applycoupon input
+{
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+}
+
+
+
+#addcart .applycoupon button
+{
+    height: 50px;
+    width: 100px;
+    background-color: #018b80;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+#addcart .applycoupon button:hover
+{
+    width: 110px;
+    color: black;
+
+}
+
+
+
+.subtotal
+
+{
+    width: 50%;
+    margin-bottom: 20px;
+    border: 1px solid rgb(214, 214, 214);
+    padding: 20px;
+}
+
+
+.subtotal table
+{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.subtotal h3
+{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+
+
+.subtotal table td
+{
+    width: 50%;
+    border: 1px solid rgb(214, 214, 214);
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+.subtotal button
+{
+    padding: 10px;
+    margin: 10px;
+    width: 80px;
+    background-color: #018b80;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+.subtotal button:hover
+{
+    color: black;
+}
